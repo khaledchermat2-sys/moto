@@ -36,6 +36,7 @@ export default function Navbar() {
             { label: 'Catalogue', href: '/catalogue' },
             { label: 'Marques', href: '/marques' },
             { label: 'Podcasts', href: '/podcasts' },
+            { label: 'Conseils', href: '/conseils' },
           ].map(link => (
             <Link key={link.href} href={link.href} style={{
               color: '#a0a0a0', textDecoration: 'none', fontWeight: 500,
@@ -95,6 +96,7 @@ export default function Navbar() {
             { label: 'Catalogue', href: '/catalogue' },
             { label: 'Marques', href: '/marques' },
             { label: 'Podcasts', href: '/podcasts' },
+            { label: 'Conseils', href: '/conseils' },
           ].map(link => (
             <Link key={link.href} href={link.href}
               onClick={() => setOpen(false)}

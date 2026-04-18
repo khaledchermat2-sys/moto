@@ -1,6 +1,6 @@
 'use server'
 
-import { createAdminClient } from '@/lib/supabase/server'
+import { createAdminClient, createClient } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 
 /**
@@ -287,6 +287,6 @@ export async function getDashboardStats() {
 }
 
 export async function adminLogout() {
-  const supabase = await createAdminClient()
+  const supabase = await createClient()
   await supabase.auth.signOut()
 }
